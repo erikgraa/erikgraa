@@ -1,0 +1,29 @@
+on:
+  push:
+    paths:
+      - scripts/**
+  schedule:
+    - cron: "0 6 * * *"      
+  workflow_dispatch:      
+
+name: "Update README"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate new README
+        shell: pwsh
+        run: |
+          ./scripts/readme.ps1   
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v4
+        with:
+          message: "Auto updating README"
+          add: "."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
