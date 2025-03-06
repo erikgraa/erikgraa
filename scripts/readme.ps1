@@ -20,4 +20,4 @@ foreach ($_blog in $rss) {
     $markdown += ('|[{0}]({1})|{2}|{3}|' -f $_blog.title, $_blog.link.href, $_blog.category.term, $_blog.published.split('T')[0])
 }
 
-$markdown | Out-File -FilePath c:\temp\erikgraa\README.md -Encoding utf8
+$markdown | Out-File -FilePath ('{0}\README.md' -f $env:GITHUB_WORKSPACE) -Encoding utf8
