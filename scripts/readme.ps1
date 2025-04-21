@@ -17,7 +17,7 @@ $markdown += '|Blog post|Category|Published'
 $markdown += '| :--- | --- | --- |'
 
 foreach ($_blog in $rss) {
-    $markdown += ('|[{0}]({1})|{2}|{3}|' -f $_blog.title, $_blog.link.href, $_blog.category.term, $_blog.published.split('T')[0])
+    $markdown += ('|[{0}]({1})|{2}|{3}|' -f $_blog.title, $_blog.link.href, ($_blog.category.term -join ', '), $_blog.published.split('T')[0])
 }
 
 $markdown | Out-File -FilePath ('{0}\README.md' -f $env:GITHUB_WORKSPACE) -Encoding utf8
