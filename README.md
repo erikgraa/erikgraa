@@ -4,7 +4,7 @@ During the day I work as an integrator/automation enabler/technologist. ⚡
 I maintain a [blog](https://blog.graa.dev) where I document lessons from learning about technology new to me.
 |Blog post|Category|Published
 | :--- | --- | --- |
-|[VMware Explore 2025 Las Vegas Retrospective - A Private Cloud Renaissance](https://blog.graa.dev/Explore2025-Recap)|VMware|2025-09-09|
+|[VMware Explore 2025 Las Vegas Retrospective - A Private Cloud Renaissance](https://blog.graa.dev/Explore2025-Recap)|VMware|2025-09-10|
 |[Scanning for Windows-related secret sprawl with HashiCorp HCP Vault Radar](https://blog.graa.dev/VaultRadar-Windows)|HashiCorp|2025-08-19|
 |[PSConfEU 2025 Recap](https://blog.graa.dev/PSConfEU2025-Impressions)|Microsoft|2025-08-17|
 |[HashiDays 2025 in London Recap](https://blog.graa.dev/HashiDays2025-Recap)|HashiCorp|2025-07-16|
